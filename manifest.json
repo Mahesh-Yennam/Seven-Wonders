@@ -1,0 +1,17 @@
+{
+  "name": "7 Wonders of the World Explorer — Gamility",
+  "short_name": "7 Wonders",
+  "description": "Interactive encyclopedic journey across the New 7 Wonders, Ancient World, and Natural Wonders with uncropped photography, architectural timelines, and world map.",
+  "start_url": "https://mahesh-yennam.github.io/Seven-Wonders/",
+  "scope": "https://mahesh-yennam.github.io/Seven-Wonders/",
+  "display": "standalone",
+  "background_color": "#080c16",
+  "theme_color": "#d97706",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

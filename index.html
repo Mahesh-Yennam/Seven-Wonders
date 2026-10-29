@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RFQ8M0VSFN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-RFQ8M0VSFN');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7 Wonders of the World: Ancient, Modern & Natural Wonders Explorer | Gamility</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Explore the New 7 Wonders, the 7 Ancient Wonders of the World, and the 7 Natural Wonders in high-resolution uncropped photography, interactive global mapping, architectural blueprints, and historical timelines.">
+  <meta name="keywords" content="7 wonders of the world, ancient wonders, new seven wonders, natural wonders, taj mahal, colosseum, great pyramid of giza, petra, machu picchu, grand canyon, mount everest, gamility explorer">
+  <meta name="author" content="Gamility">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://mahesh-yennam.github.io/Seven-Wonders/">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mahesh-yennam.github.io/Seven-Wonders/">
+  <meta property="og:title" content="7 Wonders of the World: Ancient, Modern & Natural Wonders Explorer | Gamility">
+  <meta property="og:description" content="Explore the New 7 Wonders, the 7 Ancient Wonders of the World, and the 7 Natural Wonders in high-resolution uncropped photography, interactive global mapping, architectural blueprints, and historical timelines.">
+  <meta property="og:image" content="https://mahesh-yennam.github.io/Seven-Wonders/preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:alt" content="7 Wonders of the World: Ancient, Modern & Natural Wonders Explorer | Gamility">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://mahesh-yennam.github.io/Seven-Wonders/">
+  <meta name="twitter:title" content="7 Wonders of the World: Ancient, Modern & Natural Wonders Explorer | Gamility">
+  <meta name="twitter:description" content="Explore the New 7 Wonders, the 7 Ancient Wonders of the World, and the 7 Natural Wonders in high-resolution uncropped photography, interactive global mapping, architectural blueprints, and historical timelines.">
+  <meta name="twitter:image" content="https://mahesh-yennam.github.io/Seven-Wonders/preview.png">
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#d97706">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Leaflet CSS for Global Mapping -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "7 Wonders of the World Explorer",
+    "url": "https://mahesh-yennam.github.io/Seven-Wonders/",
+    "description": "Explore the New 7 Wonders, the 7 Ancient Wonders of the World, and the 7 Natural Wonders in high-resolution photography, global mapping, and architectural timelines.",
+    "applicationCategory": "EducationalApplication",
+    "operatingSystem": "All"
+  }
+  </script>
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="header-left">
+        <a href="https://mahesh-yennam.github.io/Gamility/explorer.html" class="btn-return-hub" title="Return to Gamility Explorers Collection">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          <span>Gamility Explorers</span>
+        </a>
+        <div class="brand-divider"></div>
+        <div class="app-brand">
+          <div class="brand-icon-halo">🏛️</div>
+          <div class="brand-titles">
+            <h1 class="brand-name">7 Wonders of the World</h1>
+            <span class="brand-tagline">Architectural Marvels &amp; Natural Splendors</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-right">
+        <button type="button" class="btn-sound-toggle" id="btnSoundToggle" aria-label="Toggle Audio Soundscape">
+          <span class="sound-icon" id="soundIcon">🔊</span>
+          <span class="sound-text" id="soundText">Sound: ON</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero-section">
+    <div class="hero-backdrop"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span>21 Legendary Marvels Across 4,500 Years</span>
+      </div>
+      <h2 class="hero-title">Monuments of Human Genius &amp; Nature’s Grandeur</h2>
+      <p class="hero-desc">
+        Embark on an archaeological and geographical odyssey across the <strong>New 7 Wonders</strong>, the lost <strong>7 Wonders of the Ancient World</strong>, and the planet's breathtaking <strong>7 Natural Wonders</strong>. Complete with uncropped master photography, structural blueprints, and interactive global coordinates.
+      </p>
+
+      <!-- Quick Metrics Ribbon -->
+      <div class="metrics-ribbon">
+        <div class="metric-pill">
+          <span class="metric-val">21</span>
+          <span class="metric-lbl">Total Wonders</span>
+        </div>
+        <div class="metric-pill">
+          <span class="metric-val">3</span>
+          <span class="metric-lbl">Historic Eras</span>
+        </div>
+        <div class="metric-pill">
+          <span class="metric-val">4,580+</span>
+          <span class="metric-lbl">Years of History</span>
+        </div>
+        <div class="metric-pill">
+          <span class="metric-val">6</span>
+          <span class="metric-lbl">Continents</span>
+        </div>
+        <div class="metric-pill">
+          <span class="metric-val">100%</span>
+          <span class="metric-lbl">Uncropped Images</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Explorer Interface -->
+  <main class="main-layout-container">
+    <!-- Navigation Tabs -->
+    <nav class="category-tabs-bar" role="tablist" aria-label="Wonder Categories">
+      <button type="button" class="tab-btn active" data-category="all" role="tab" aria-selected="true">
+        <span class="tab-icon">🌐</span>
+        <span class="tab-text">All 21 Wonders</span>
+        <span class="tab-count-badge">21</span>
+      </button>
+      <button type="button" class="tab-btn" data-category="new7" role="tab" aria-selected="false">
+        <span class="tab-icon">🌟</span>
+        <span class="tab-text">New 7 Wonders</span>
+        <span class="tab-count-badge">7</span>
+      </button>
+      <button type="button" class="tab-btn" data-category="ancient" role="tab" aria-selected="false">
+        <span class="tab-icon">🏺</span>
+        <span class="tab-text">Ancient World</span>
+        <span class="tab-count-badge">7</span>
+      </button>
+      <button type="button" class="tab-btn" data-category="natural" role="tab" aria-selected="false">
+        <span class="tab-icon">🌿</span>
+        <span class="tab-text">Natural Wonders</span>
+        <span class="tab-count-badge">7</span>
+      </button>
+      <button type="button" class="tab-btn tab-btn-feature" data-view="map" role="tab" aria-selected="false">
+        <span class="tab-icon">🗺️</span>
+        <span class="tab-text">World Map</span>
+      </button>
+      <button type="button" class="tab-btn tab-btn-feature" data-view="timeline" role="tab" aria-selected="false">
+        <span class="tab-icon">⏳</span>
+        <span class="tab-text">Chronology Timeline</span>
+      </button>
+      <button type="button" class="tab-btn tab-btn-feature" data-view="quiz" role="tab" aria-selected="false">
+        <span class="tab-icon">🎯</span>
+        <span class="tab-text">Trivia Challenge</span>
+      </button>
+    </nav>
+
+    <!-- Toolbar Filters & Search -->
+    <div class="toolbar-filter-deck" id="toolbarFilterDeck">
+      <div class="search-input-wrap">
+        <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="wonderSearchInput" class="wonder-search-input" placeholder="Search by wonder name, country, civilization, or materials..." autocomplete="off">
+        <button type="button" class="search-clear-btn" id="searchClearBtn" aria-label="Clear Search">✕</button>
+      </div>
+
+      <div class="filter-controls-cluster">
+        <!-- Continent Select -->
+        <div class="select-wrapper">
+          <select id="continentFilterSelect" class="styled-select" aria-label="Filter by continent">
+            <option value="all">🌍 All Continents</option>
+            <option value="Asia">Asia</option>
+            <option value="Europe">Europe</option>
+            <option value="Africa">Africa</option>
+            <option value="Americas">Americas</option>
+            <option value="Oceania">Oceania</option>
+          </select>
+        </div>
+
+        <!-- Status Filter (Intact, Ruins, Destroyed) -->
+        <div class="select-wrapper">
+          <select id="statusFilterSelect" class="styled-select" aria-label="Filter by preservation status">
+            <option value="all">🏛️ All Preservation Status</option>
+            <option value="Standing / Intact">Standing / Intact</option>
+            <option value="Ruins / Protected">Ruins / Protected</option>
+            <option value="Destroyed in Antiquity">Destroyed in Antiquity</option>
+            <option value="Natural Ecosystem">Natural Ecosystem</option>
+          </select>
+        </div>
+
+        <!-- Random Surprise Button -->
+        <button type="button" class="btn btn-gold-outline" id="btnSurpriseWonder">
+          🎲 Surprise Wonder
+        </button>
+      </div>
+    </div>
+
+    <!-- Active Filter Chips Bar -->
+    <div class="active-query-bar" id="activeQueryBar" style="display: none;">
+      <span class="query-status-text" id="queryStatusText">Showing 21 of 21 wonders</span>
+      <button type="button" class="btn-reset-filters" id="btnResetFilters">Reset Filters ↺</button>
+    </div>
+
+    <!-- ===================================================================
+         VIEW 1: WONDERS CARDS GRID
+         =================================================================== -->
+    <section id="viewGrid" class="explorer-view-panel active">
+      <div class="wonders-grid" id="wondersGrid">
+        <!-- Dynamically rendered via app.js -->
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         VIEW 2: INTERACTIVE GLOBAL WORLD MAP
+         =================================================================== -->
+    <section id="viewMap" class="explorer-view-panel">
+      <div class="map-view-container">
+        <div class="map-header-card">
+          <div class="map-heading-group">
+            <h3 class="map-title">🗺️ Global Distribution of World Marvels</h3>
+            <p class="map-subtitle">Click any glowing wonder pin to inspect its geographic coordinates, elevation, and complete dossier.</p>
+          </div>
+          <div class="map-legend">
+            <span class="legend-item"><span class="legend-dot dot-new7"></span> New 7 Wonders</span>
+            <span class="legend-item"><span class="legend-dot dot-ancient"></span> Ancient Wonders</span>
+            <span class="legend-item"><span class="legend-dot dot-natural"></span> Natural Wonders</span>
+          </div>
+        </div>
+
+        <!-- Map Leaflet Canvas Container -->
+        <div id="wondersMap" class="wonders-leaflet-map" aria-label="World Map with Wonders Coordinates"></div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         VIEW 3: CHRONOLOGY TIMELINE
+         =================================================================== -->
+    <section id="viewTimeline" class="explorer-view-panel">
+      <div class="timeline-view-container">
+        <div class="timeline-intro-card">
+          <h3 class="timeline-title">⏳ 4,500-Year Architectural Timeline</h3>
+          <p class="timeline-subtitle">From the Old Kingdom of Egypt (2580 BC) to modern geological transformations, follow the chronological milestones of human achievement.</p>
+        </div>
+
+        <!-- Interactive Chronological Stream -->
+        <div class="timeline-track" id="timelineTrack">
+          <!-- Dynamically populated via app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         VIEW 4: WONDERS TRIVIA CHALLENGE
+         =================================================================== -->
+    <section id="viewQuiz" class="explorer-view-panel">
+      <div class="quiz-challenge-container">
+        <div class="quiz-intro-card">
+          <h3 class="quiz-title">🎯 Master Archaeologist &amp; Explorer Challenge</h3>
+          <p class="quiz-subtitle">Test your mastery of ancient engineering, civilizational builders, secret chambers, and natural geology across 10 randomized questions.</p>
+        </div>
+
+        <div class="quiz-card-box" id="quizCardBox">
+          <!-- Dynamically populated by app.js quiz engine -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =====================================================================
+       FULL DOSSIER MODAL (100% UN増CROPPED IMAGE VIEWER)
+       ===================================================================== -->
+  <div class="dossier-modal-backdrop" id="dossierModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="dossier-modal-window">
+      <!-- Modal Header Bar -->
+      <div class="modal-top-bar">
+        <div class="modal-category-badge" id="modalCategoryBadge">New 7 Wonders</div>
+        <div class="modal-controls">
+          <button type="button" class="btn-modal-nav" id="btnModalPrev" title="Previous Wonder (Left Arrow)">◀ Prev</button>
+          <button type="button" class="btn-modal-nav" id="btnModalNext" title="Next Wonder (Right Arrow)">Next ▶</button>
+          <button type="button" class="btn-modal-close" id="btnModalClose" aria-label="Close Dossier">✕</button>
+        </div>
+      </div>
+
+      <div class="modal-scroll-body">
+        <!-- Hero Media Stage (CRITICAL: 100% Uncropped, Full Image View) -->
+        <div class="dossier-media-stage">
+          <img id="modalWonderImg" src="" alt="" class="modal-wonder-img" loading="eager">
+          <div class="dossier-photo-credit" id="modalPhotoCredit">Wikimedia Commons / Public Domain</div>
+        </div>
+
+        <!-- Dossier Content Body -->
+        <div class="dossier-content-core">
+          <div class="dossier-header-block">
+            <h2 class="dossier-title" id="modalWonderTitle">Taj Mahal</h2>
+            <div class="dossier-native-name" id="modalNativeName">تاج محل • "Crown of the Palace"</div>
+            <div class="dossier-meta-tags" id="modalMetaTags">
+              <span class="meta-tag tag-loc" id="modalTagLocation">📍 Agra, Uttar Pradesh, India</span>
+              <span class="meta-tag tag-era" id="modalTagEra">📅 1631–1653 AD</span>
+              <span class="meta-tag tag-civ" id="modalTagCivilization">👑 Mughal Empire</span>
+              <span class="meta-tag tag-status" id="modalTagStatus">🏛️ UNESCO World Heritage</span>
+            </div>
+          </div>
+
+          <!-- Architectural & Geographic Specifications Grid -->
+          <div class="dossier-specs-grid">
+            <div class="spec-card">
+              <span class="spec-label">Built By / Dynasty</span>
+              <strong class="spec-val" id="modalSpecBuilder">Emperor Shah Jahan</strong>
+            </div>
+            <div class="spec-card">
+              <span class="spec-label">Primary Materials</span>
+              <strong class="spec-val" id="modalSpecMaterials">Makrana White Marble, Inlaid Precious Stones</strong>
+            </div>
+            <div class="spec-card">
+              <span class="spec-label">Dimensions / Scale</span>
+              <strong class="spec-val" id="modalSpecDimensions">73 m (240 ft) Dome Height • 17-Hectare Complex</strong>
+            </div>
+            <div class="spec-card">
+              <span class="spec-label">GPS Coordinates</span>
+              <strong class="spec-val font-mono" id="modalSpecCoordinates">27.1751° N, 78.0421° E</strong>
+            </div>
+          </div>
+
+          <!-- Comprehensive Narrative Sections -->
+          <div class="dossier-narrative-sections">
+            <div class="narrative-block">
+              <h4 class="narrative-heading">📜 Historical Origins &amp; Significance</h4>
+              <p class="narrative-text" id="modalStoryOrigin">Detailed narrative loading...</p>
+            </div>
+
+            <div class="narrative-block">
+              <h4 class="narrative-heading">⚙️ Architectural Feats &amp; Engineering Secrets</h4>
+              <p class="narrative-text" id="modalStoryEngineering">Engineering details loading...</p>
+            </div>
+
+            <div class="narrative-block">
+              <h4 class="narrative-heading">💡 Did You Know?</h4>
+              <div class="trivia-highlight-box" id="modalStoryTrivia">
+                Fascinating historical facts loading...
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- App Footer -->
+  <footer class="app-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="footer-logo">🏛️ 7 Wonders Explorer</span>
+        <p class="footer-desc">Part of the Gamility Educational &amp; Web Applications Suite. Free, accessible, and fast.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://mahesh-yennam.github.io/Gamility/explorer.html">Gamility Explorers</a>
+        <a href="https://mahesh-yennam.github.io/Gamility/games.html">All Games</a>
+        <a href="https://mahesh-yennam.github.io/Gamility/tools.html">Everyday Tools</a>
+        <a href="https://mahesh-yennam.github.io/Gamility/about.html">About</a>
+        <a href="https://mahesh-yennam.github.io/Gamility/contact.html">Contact</a>
+      </div>
+      <div class="footer-copy">
+        © 2026 Gamility. Architectural photography courtesy of Wikimedia Commons under Creative Commons &amp; Public Domain licenses.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Leaflet Map JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+  <!-- Application Logic -->
+  <script src="app.js"></script>
+</body>
+</html>
